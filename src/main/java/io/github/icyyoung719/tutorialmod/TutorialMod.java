@@ -1,6 +1,7 @@
 package io.github.icyyoung719.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import io.github.icyyoung719.tutorialmod.block.ModBlocks;
 import io.github.icyyoung719.tutorialmod.item.ModCreativeModTabs;
 import io.github.icyyoung719.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -27,6 +28,8 @@ public class TutorialMod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
