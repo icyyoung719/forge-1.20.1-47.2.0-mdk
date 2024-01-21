@@ -1,6 +1,7 @@
 package io.github.icyyoung719.tutorialmod.block;
 
 import io.github.icyyoung719.tutorialmod.TutorialMod;
+import io.github.icyyoung719.tutorialmod.block.custom.SoundBlock;
 import io.github.icyyoung719.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -39,6 +40,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registryBlock("end_stone_sapphire_ore",
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> SOUND_BLOCK = registryBlock("sound_block",
+            ()-> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
 
